@@ -1,0 +1,91 @@
+/* Estilos para Práctica 5 */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 10px;
+    vertical-align: text-top;
+}
+
+
+
+
+
+/*encabezado*/
+table tr:first-child td { 
+    background-color: #587aff;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+/*Menu*/
+td[rowspan="3"] {
+    background-color: #e0e0e0;
+    width: 200px;
+}
+h3, h4 {
+    margin-top: 0;
+    color: #0f0f0f;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+li {
+    margin: 5px 0;
+}
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Contenido principal */
+div {
+    margin: 10px 0;
+    overflow: auto;
+}
+h2 { /*Subtitulos HTML, CSS, JS*/
+    color: #2c5aa0;
+    margin-top: 0;
+}
+p {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+/* Pie de página */
+table tr:last-child td {
+    background-color: #587aff;
+    color: white;
+    text-align: center;
+}
+table tr:last-child p {
+    margin: 5px 0;
+    text-align: center;
+}
