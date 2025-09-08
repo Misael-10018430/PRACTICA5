@@ -1,19 +1,53 @@
-/* Estilos para Práctica 5 */
+/* Línea #1 - Configuración general del sitio */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
     background-color: #ffffff;
 }
 
-td {
-    border: 1px solid #000;
-    padding: 10px;
-    vertical-align: text-top;
+/* Configuración para quitar los puntos de viñeta de la lista */
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
+/* Formato para las opciones de la lista (LI dentro de UL) */
+ul li {
+    margin: 5px 0;
+    display: block;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 3px;
+}
 
+/* Configuración para enlaces (A dentro de LI dentro de UL) */
+ul li a {
+    color: #0066cc;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
 
+/* Efecto hover para animación de botones de menú */
+ul li a:hover {
+    background-color: #ddd;
+    color: #004499;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
 
+/* Subir contenido por cada TD de la tabla */
+td {
+    padding: 10px;
+    vertical-align: top;
+}
 
 /*encabezado*/
 table tr:first-child td { 
@@ -26,58 +60,33 @@ table tr:first-child td {
     overflow: hidden;
 }
 
-
-
-
-
 /*Menu*/
 td[rowspan="3"] {
     background-color: #e0e0e0;
     width: 200px;
 }
+
 h3, h4 {
     margin-top: 0;
     color: #0f0f0f;
 }
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-li {
-    margin: 5px 0;
-}
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-
 
 /* Contenido principal */
 div {
     margin: 10px 0;
     overflow: auto;
 }
+
 h2 { /*Subtitulos HTML, CSS, JS*/
     color: #2c5aa0;
     margin-top: 0;
 }
+
 p {
     text-align: justify;
     line-height: 1.5;
     margin: 10px 0;
 }
-
-
-
-
-
 
 /* Pie de página */
 table tr:last-child td {
@@ -85,6 +94,7 @@ table tr:last-child td {
     color: white;
     text-align: center;
 }
+
 table tr:last-child p {
     margin: 5px 0;
     text-align: center;
